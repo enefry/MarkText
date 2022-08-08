@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B16AAEE28A0DF8300D2C614 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B16AAED28A0DF8300D2C614 /* Settings.bundle */; };
 		9B9F89C1287D6376007E7DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F89C0287D6376007E7DDE /* AppDelegate.swift */; };
 		9B9F89C3287D6376007E7DDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F89C2287D6376007E7DDE /* SceneDelegate.swift */; };
 		9B9F89C5287D6376007E7DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F89C4287D6376007E7DDE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B16AAED28A0DF8300D2C614 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		9B9F89BD287D6376007E7DDE /* MarkText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9F89C0287D6376007E7DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B9F89C2287D6376007E7DDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				9B9F89C9287D637A007E7DDE /* Assets.xcassets */,
 				9B9F89CB287D637A007E7DDE /* LaunchScreen.storyboard */,
 				9B9F89CE287D637A007E7DDE /* Info.plist */,
+				9B16AAED28A0DF8300D2C614 /* Settings.bundle */,
 			);
 			path = MarkText;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B16AAEE28A0DF8300D2C614 /* Settings.bundle in Resources */,
 				9B9F89CD287D637A007E7DDE /* LaunchScreen.storyboard in Resources */,
 				9B9F89CA287D637A007E7DDE /* Assets.xcassets in Resources */,
 				9B9F89C8287D6376007E7DDE /* Main.storyboard in Resources */,

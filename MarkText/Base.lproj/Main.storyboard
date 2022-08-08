@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Ua-f1-0KG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21219" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Ua-f1-0KG">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21200"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rLk-2C-Whx">
-                                <rect key="frame" x="12" y="100.00000000000001" width="366" height="163.33333333333337"/>
+                                <rect key="frame" x="12" y="103.00000000000001" width="366" height="160.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="G0D-GR-STO">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="34.333333333333336"/>
@@ -49,18 +49,32 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(班级)-(姓名)" borderStyle="roundedRect" placeholder="前缀" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-5Q-iAe">
-                                        <rect key="frame" x="0.0" y="44.333333333333343" width="366" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zMy-hd-AZm">
+                                        <rect key="frame" x="0.0" y="44.333333333333343" width="366" height="31"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="前缀, 多重情况下使用“;”分割" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-5Q-iAe">
+                                                <rect key="frame" x="0.0" y="0.0" width="274.33333333333331" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phy-mB-SG1">
+                                                <rect key="frame" x="278.33333333333331" y="0.0" width="34.666666666666686" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-5c-pO2">
+                                                <rect key="frame" x="317" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="选中后缀" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XGT-yl-gZG">
-                                        <rect key="frame" x="0.0" y="88.333333333333343" width="366" height="34"/>
+                                        <rect key="frame" x="0.0" y="85.333333333333343" width="366" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="MdT-BW-KUo">
-                                        <rect key="frame" x="0.0" y="132.33333333333334" width="366" height="31"/>
+                                        <rect key="frame" x="0.0" y="129.33333333333334" width="366" height="31"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="非选中后缀" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SO5-Op-qVz">
                                                 <rect key="frame" x="0.0" y="0.0" width="229.66666666666666" height="31"/>
@@ -136,6 +150,7 @@
                     <connections>
                         <outlet property="autoIndex" destination="idg-nT-k4e" id="5wS-gL-bFL"/>
                         <outlet property="collectionView" destination="VGp-H4-26L" id="7qt-gU-YFX"/>
+                        <outlet property="multiPrefix" destination="ORb-5c-pO2" id="1uH-sO-p0u"/>
                         <outlet property="prefixTextField" destination="o4s-5Q-iAe" id="YgD-mi-7x8"/>
                         <outlet property="selectedSuffixTextField" destination="XGT-yl-gZG" id="7v2-c5-7Nk"/>
                         <outlet property="unselectedSuffixTextField" destination="SO5-Op-qVz" id="Y8r-oR-WJm"/>
@@ -150,7 +165,7 @@
             <objects>
                 <navigationController id="1Ua-f1-0KG" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CJL-4d-X8t">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
